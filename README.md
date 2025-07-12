@@ -1,7 +1,8 @@
 # long-day-foundation-year-project-
 This is my foundation year final project. This is Candy Crush Saga like game match of 3 tile in gameplay to score.
 
-<img width="336" height="336" alt="tile2" src="https://github.com/user-attachments/assets/85c3225f-7dcd-42ed-9ece-307ea4825061" />
+![background](https://github.com/user-attachments/assets/a322728f-f2af-482b-b5a8-e4538bd7238d)
+
 
 
 Library graphic used: https://github.com/erkkah/tigr

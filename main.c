@@ -273,7 +273,7 @@ int main(void)
             tigrClear(screen,tigrRGB(255,255,255));
             tigrBlit(screen,background,0,0,0,0,screenwidth,screenheight);
 
-            tigrPrint(screen, tfont,130,85,tigrRGB(255,0,0),"LONG DAY!");
+            tigrPrint(screen,tfont,130,60,tigrRGB(255,0,0),"LONG DAY!");
             tigrPrint(screen, tfont,5,5,tigrRGB(155,155,155),"Highest score: ");
             tigrPrint(screen,tfont,5,15,tigrRGB(155,155,155),"last score: ");
             tigrPrint(screen,tfont,100,5,tigrRGB(255,0,0),"%d\n",gameData->highest_score);
@@ -475,7 +475,9 @@ int main(void)
 
 
             int hover2 = (mx >=Menu.x && mx <= Menu.x + Menu.width && my >= Menu.y && my <= Menu.y + Menu.height);
+
             tigrRect(screen,Menu.x,Menu.y,Menu.width,Menu.height,hover2? tigrRGB(125,125,125):tigrRGB(255,0,0));
+            tigrFillRect(screen,Menu.x,Menu.y,Menu.width,Menu.height,hover2? tigrRGBA(125,125,125,190):tigrRGBA(255,0,0,190));
             tigrPrint(screen,tfont,Menu.x+35,Menu.y+10,hover2? tigrRGB(125,125,125):tigrRGB(255,0,0),"Menu");
             tigrMouse(screen,&mx,&my,&mb);
             if (mb && !lmp){
@@ -513,6 +515,7 @@ int main(void)
 
             int hover1 = (mx>= resstartButton.x && mx <= resstartButton.x + resstartButton.width && my >= resstartButton.y && my <= resstartButton.y + resstartButton.height);
             tigrRect(screen,resstartButton.x,resstartButton.y,resstartButton.width,resstartButton.height,hover1? tigrRGB(125,125,125):tigrRGB(255,255,255));
+            tigrFillRect(screen,resstartButton.x,resstartButton.y,resstartButton.width,resstartButton.height,hover1? tigrRGBA(125,125,125,190):tigrRGBA(255,0,0,190));
             tigrPrint(screen,tfont,resstartButton.x+25,resstartButton.y+10,hover1? tigrRGB(125,125,125):tigrRGB(255,255,255),"Restart");
 
             tigrMouse(screen,&mx,&my,&mb);

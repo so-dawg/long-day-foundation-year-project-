@@ -272,6 +272,8 @@ int main(void)
         
             tigrClear(screen,tigrRGB(255,255,255));
             tigrBlit(screen,background,0,0,0,0,screenwidth,screenheight);
+
+            tigrPrint(screen, tfont,130,85,tigrRGB(255,0,0),"LONG DAY!");
             tigrPrint(screen, tfont,5,5,tigrRGB(155,155,155),"Highest score: ");
             tigrPrint(screen,tfont,5,15,tigrRGB(155,155,155),"last score: ");
             tigrPrint(screen,tfont,100,5,tigrRGB(255,0,0),"%d\n",gameData->highest_score);

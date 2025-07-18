@@ -53,3 +53,19 @@ dkms.conf
 
 # debug information files
 *.dwo
+# Compiled files
+*.o
+*.exe
+
+# Audio library (if using miniaudio.c/h as a dependency)
+miniaudio.o
+
+# Asset folders (if auto-generated)
+image/
+sound/
+
+# Data files
+file.txt
+
+# Environment files
+.env

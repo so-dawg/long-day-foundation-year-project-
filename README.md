@@ -16,7 +16,7 @@ library audio used: https://github.com/mackron/miniaudio
     
     gcc main.c tigr.c audio.c miniaudio.c -o game.exe -I. -lgdi32 -lwinmm -lm 
     
-    and after .\game.exe
+    .\game.exe
   
     #Linux:
     

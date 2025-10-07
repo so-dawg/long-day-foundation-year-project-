@@ -24,4 +24,7 @@ library audio used: https://github.com/mackron/miniaudio
 
 Thank you so much!
 
+A new update will be release soon
+
+
 @so_dawg

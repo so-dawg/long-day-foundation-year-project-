@@ -1,5 +1,5 @@
 # long-day-foundation-year-project-
-This is my foundation year final project. This is Candy Crush Saga like game match of 3 tile in gameplay to score.
+This is my foundation year final project. This is similar Candy Crush Saga game match of 3 tile in gameplay to score.
 
 ![background](https://github.com/user-attachments/assets/a322728f-f2af-482b-b5a8-e4538bd7238d)
 
@@ -26,5 +26,6 @@ Thank you so much!
 
 A new update will be release soon
 
+!!This game need correct frame rate for gameplay and graphic work and every pc is different.
 
-@so_dawg
+@so-dawg

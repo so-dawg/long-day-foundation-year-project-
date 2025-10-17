@@ -24,8 +24,7 @@ library audio used: https://github.com/mackron/miniaudio
 
 Thank you so much!
 
-A new update will be release soon
 
-!!This game need correct frame rate for gameplay and graphic work and every pc is different.
+!!This game need correct frame rate for gameplay and graphic work and every pc is different(Cpu higher than 4.9ghz).
 
 @so-dawg

@@ -1,0 +1,2 @@
+1. Changed function "are_tile_adjacent" to make code run faster and light by pass reference into paramenter.
+2. Changed function "swap_tiles" to make code run faster too by pass reference too.

@@ -1,6 +1,6 @@
 #What is long day?
 Long day game start from project of my algorithm teacher and my dream job are game developer.
-#File breakdown
+#File breakdown:
 let's start with "image" folder, In folder contain file .png file and all this file is background image and tile image.
 The "sound" folder have a button sound-effect, scoring sound-effect(coin), pop sound-effect and background music.
 "audio" c program is write all function like "init_audio" is for initialize audio

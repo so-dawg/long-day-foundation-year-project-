@@ -93,13 +93,13 @@ Store *loadStore(const char *filename){
     fclose(file);
     return data;
 }
-void swap_tiles(int x1,int y1,int x2,int y2){
-    char temp = board[y1][x1];
-    board[y1][x1]= board[y2][x2];
-    board[y2][x2]= temp;
+void swap_tiles(int* x1,int* y1,int* x2,int* y2){
+    char temp = board[*y1][*x1];
+    board[*y1][*x1]= board[*y2][*x2];
+    board[*y2][*x2]= temp;
 }
-bool are_tile_adjacent(Vector2 a, Vector2 b) {
-    return abs(a.x - b.x) + abs(a.y - b.y) == 1;
+bool are_tile_adjacent(Vector2* a, Vector2* b) {
+    return abs(a->x - b->x) + abs(a->y - b->y) == 1;
 }
 void add_score_popup(int x,int y,int amount,Vector2 grid_origin){
     for (int i=0;i<MAX_SCORE_POP;i++){
@@ -323,11 +323,11 @@ int main(void)
                     current_tile=(Vector2){grid_x,grid_y};
                     current_selected=true;
                    
-                    if (are_tile_adjacent(selected_tile,current_tile)){
-                        swap_tiles(selected_tile.x, selected_tile.y, current_tile.x, current_tile.y);
+                    if (are_tile_adjacent(&selected_tile,&current_tile)){
+                        swap_tiles(&selected_tile.x, &selected_tile.y, &current_tile.x, &current_tile.y);
 
                         if (!find_matched()) {
-                            swap_tiles(selected_tile.x, selected_tile.y, current_tile.x, current_tile.y);
+                            swap_tiles(&selected_tile.x, &selected_tile.y, &current_tile.x, &current_tile.y);
                         } else {
                             swap_count--;
                         }

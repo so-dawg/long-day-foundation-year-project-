@@ -25,6 +25,6 @@ library audio used: https://github.com/mackron/miniaudio
 Thank you so much!
 
 
-!!This game need correct frame rate for gameplay and graphic work and every pc is different(Cpu higher than 4.9ghz can break game!).
+!!This game need correct frame rate for gameplay also graphic work and every pc is different(Cpu higher than 4.9ghz can break game!).
 
 @so-dawg
